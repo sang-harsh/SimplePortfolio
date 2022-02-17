@@ -1,0 +1,280 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Navigation bar */
+.navBar {
+  display: flex;
+  background-color: #fbeec163;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+}
+.navBarLogo {
+  flex: 1;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.navBar div {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.selected {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  height: 450px;
+  background-color: #fbeec1;
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+.mainHeading {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(78, 74, 74);
+}
+
+.mainContent {
+  padding-top: 22px;
+  max-width: 500px;
+  font-size: 19px;
+  padding-bottom: 22px;
+}
+.hand {
+  display: inline-block;
+  animation: wiggle 0.4s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+button {
+  margin: 5px;
+  height: 48px;
+  width: 171px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #659dbd;
+  border: 2px solid #659dbd;
+  text-transform: uppercase;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.squareButton {
+  width: 48px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+#hackerrank-svg {
+  width: 34px;
+  height: 34px;
+  padding-left: 3px;
+}
+
+/* Sections */
+
+.Sections {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Skills Section */
+
+.skillsContent {
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 900px;
+  margin: auto;
+}
+.progress {
+  background-color: grey;
+  width: 300px;
+  height: 6px;
+  border-radius: 3px;
+}
+.progressBar {
+  width: 75%;
+  background-color: gold;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.react {
+  width: 65%;
+}
+.Java {
+  width: 80%;
+}
+.htmlbar {
+  width: 75%;
+}
+.javascriptbar {
+  width: 75%;
+}
+
+.dsa {
+  width: 50%;
+}
+.mysql {
+  width: 30%;
+}
+
+.firebase {
+  width: 20%;
+}
+
+.php {
+  width: 10%;
+}
+/* Live Activity Section */
+
+.LiveActivityFlex {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.miniActivity {
+  width: 200px;
+  border-top: 4px solid rgb(209, 59, 59);
+  border-radius: 8px;
+  padding: 10px;
+  padding-bottom: 25px;
+  font-family: "Raleway";
+  color: rgb(0, 0, 0, 0.705);
+  box-shadow: 2px 1px 6px 2px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 2px 1px 6px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 2px 1px 6px 2px rgba(0, 0, 0, 0.26);
+}
+
+.stats {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  margin: 0px 200px 0px 200px;
+  color: rgb(73, 70, 70);
+}
+.candle {
+  font-size: 40px;
+}
+
+/* Projects Section */
+.projectFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  text-align: left;
+}
+
+.project {
+  width: 400px;
+  margin: 20px;
+}
+.projectImage {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.projectText {
+  text-align: justify;
+  display: inline-block;
+  font-family: "Baloo Chettan 2", cursive;
+  color: rgb(82, 82, 82);
+  font-size: 14px;
+}
+
+.projectInfo {
+  display: flex;
+  align-items: centre;
+}
+
+.projectTitle {
+  flex: 1;
+  font-weight: bold;
+}
+.date {
+  font-family: "Baloo Chettan 2", cursive;
+  color: rgb(82, 82, 82);
+  font-size: 12px;
+}
+.stack {
+  background-color: antiquewhite;
+}
+
+.teckStack {
+  display: flex;
+}
+.stack {
+  padding: 3px;
+  min-width: 90px;
+  margin: 5px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Baloo Chettan 2", cursive;
+  color: rgb(82, 82, 82);
+  font-size: 12px;
+}
