@@ -12,7 +12,7 @@ body {
 }
 
 /* Navigation bar */
-.navBar {
+#navBar {
   display: flex;
   background-color: #fbeec163;
   position: fixed;
@@ -27,7 +27,7 @@ body {
   font-weight: 600;
 }
 
-.navBar div {
+#navBar div {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -53,7 +53,7 @@ body {
 .mainHeading {
   font-size: 40px;
   font-weight: 500;
-  color: rgb(78, 74, 74);
+  color: rgb(87, 71, 71);
 }
 
 .mainContent {
@@ -154,10 +154,10 @@ button {
 }
 
 .react {
-  width: 65%;
+  width: 70%;
 }
 .Java {
-  width: 80%;
+  width: 50%;
 }
 .htmlbar {
   width: 75%;
@@ -170,11 +170,11 @@ button {
   width: 50%;
 }
 .mysql {
-  width: 30%;
+  width: 20%;
 }
 
 .firebase {
-  width: 20%;
+  width: 50%;
 }
 
 .php {
@@ -209,7 +209,6 @@ button {
   font-size: 24px;
   font-weight: bold;
 }
-
 /* Footer Section */
 .footer {
   text-align: center;

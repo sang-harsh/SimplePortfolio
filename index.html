@@ -29,21 +29,21 @@
 
   <body>
     <!-- Navigation Bar -->
-    <div class="navBar">
+    <div id="navBar">
       <div class="navBarLogo">🕯️</div>
-      <div class="selected">Home</div>
-      <div>Skills</div>
-      <div>Live Activity</div>
-      <div>Projects</div>
+      <div id="home"class="selected">Home</div>
+      <div id="skills">Skills</div>
+      <div id="live-activity">Live Activity</div>
+      <div id="projects">Projects</div>
     </div>
     <!-- Banner Start -->
-    <div class="banner">
+    <div  class="banner">
       <div class="mainHeading">
         Hi <span class="hand">👋</span>, I am Sangharsh Khandagale
       </div>
       <div class="mainContent">
         I am a BE IT Graduate from Government College of Engineering,
-        Aurangabad. I love to code and currently seeking opportunities in Front-End Development.
+        Aurangabad in the year of 2019. I love to code and currently seeking opportunities in Front-End Development.
       </div>
       <div class="button-group">
 
@@ -97,7 +97,7 @@
     </div>
 
     <!-- Skills Section Start -->
-    <div class="Sections">
+    <div id="skill"class="Sections">
       <div style="font-family: 'Sen'; font-size: 35px; font-weight: 500">
         Skills
       </div>
@@ -163,7 +163,7 @@
     </div>
 
     <!-- Live Activity Section Start -->
-    <div class="Sections">
+    <div id="live"class="Sections">
       <div style="font-family: 'Sen'; font-size: 35px; font-weight: 500">
         Live Activity
       </div>
@@ -172,7 +172,7 @@
           <div class="miniActivity">
             <img src="./Images/github.jpeg" height="50px" alt="" />
             <br />
-            <span class="stats">2010</span>
+            <span id="github-repos" class="stats"></span>
             <br />
             <br />
             <span>Public Repositores</span>
@@ -182,7 +182,7 @@
           <div class="miniActivity">
             <img src="./Images/hacker.png" height="50px" width="130px" />
             <br />
-            <span class="stats">2010</span>
+            <span class="stats">****</span>
             <br />
             <br />
             <span>Current Rating</span>
@@ -192,72 +192,22 @@
     </div>
 
     <!-- Projects Section -->
-    <div class="Sections">
+    <div id="project"class="Sections">
       <div style="font-family: 'Sen'; font-size: 35px; font-weight: 500">
         Projects
       </div>
 
       <div class="projectFlex">
-        <div class="project">
-          <a href="https://sang-harsh.github.io/rentomojo/#/" target="_blank">
-            <img src="./images/Blog-Website.png" class="projectImage" />
-            <div class="projectInfo">
-              <div class="projectTitle">Rentomojo</div>
-              <div class="date">Jan 2022</div>
-            </div>
-            <span class="projectText">
-              This a Simple Blog website created using React with the use of
-              different Hooks, React Router for for basic linking of pages,
-              React Bootstrap to create a table on the homepage and basic
-              styling and an open source API
-              "https://jsonplaceholder.typicode.com/"
-            </span>
-            <div class="teckStack">
-              <div class="stack">React</div>
-              <div class="stack" style="background-color: rgb(215, 250, 242)">
-                React Router
-              </div>
-              <div class="stack">React Bootstrap</div>
-              <div class="stack" style="background-color: rgb(215, 250, 242)">
-                GitHub Pages
-              </div>
-            </div>
-          </a>
-        </div>
+        
 
         <div class="project">
-          <img src="./images/a.png" class="projectImage" />
-          <div class="projectInfo">
-            <div class="projectTitle">Buy Fresh</div>
-            <div class="date">Dec 2021</div>
-          </div>
-          <span class="projectText">
-            A hybrid app through which a farmer can sell their crops and
-            vegetables online. Consumers can buy the crops directly using the
-            website and negotiate with the farmer for better rates.
-          </span>
-          <div class="teckStack">
-            <div class="stack">React</div>
-            <div class="stack" style="background-color: rgb(215, 250, 242)">
-              HTML
-            </div>
-            <div class="stack">CSS</div>
-            <div class="stack" style="background-color: rgb(215, 250, 242)">
-              Javascript
-            </div>
-          </div>
-        </div>
-
-        <div class="project
-        vuhg  hg hu nkhgnb   mh
           <a href="https://sang-harsh.github.io/Calculator" target="_blank">
             <img src="./images/SimpleCalculator.png" class="projectImage" />
             <div class="projectInfo">
               <div class="projectTitle">Calculator</div>
               <div class="date">Dec 2021</div>
             </div>
-            <span class="projectText">
-              cbg bbj ghkj 
+            <span class="projectText"> 
               This is a simple one-page website where we have a calculater which
               peforms a basic day-to-day arithmatic functions and have instant
               results. The Tech Stack used is quite simplistic which includes
@@ -279,15 +229,65 @@
         </div>
 
         <div class="project">
-          <img src="./images/a.png" class="projectImage" />
+          <a href="https://sang-harsh.github.io/easyshop/" target="_blank">
+          <img src="./images/EasyShop.png" class="projectImage"/>
           <div class="projectInfo">
-            <div class="projectTitle">Buy Fresh</div>
-            <div class="date">Dec 2021</div>
+            <div class="projectTitle">Easy Shop</div>
+            <div class="date">Mar 2022</div>
           </div>
           <span class="projectText">
-            A hybrid app through which a farmer can sell their crops and
-            vegetables online. Consumers can buy the crops directly using the
-            website and negotiate with the farmer for better rates.
+            An easy to use e-commerce website for purchase of various products created using ReactJS and React Router. Firebase is used for user Authentication and styled by Material UI. FakeStore API is used for data. Meanwhile logo for the site is desiged on website-logomakr.com. Moreover, react hooks and refs along with local Storage is used to provide basic functionalities.  
+          </span>
+          <div class="teckStack">
+            <div class="stack">React</div>
+            <div class="stack" style="background-color: rgb(215, 250, 242)">
+              Rapid API
+            </div>
+            <div class="stack">Material UI</div>
+            <div class="stack" style="background-color: rgb(215, 250, 242)">
+              Google Maps
+            </div>
+          </div>
+        </a>
+        </div>
+
+        
+
+        <div class="project">
+          <a href="https://sang-harsh.github.io/rentomojo/#/" target="_blank">
+            <img src="./images/Blog-Website.png" class="projectImage" />
+            <div class="projectInfo">
+              <div class="projectTitle">Rentomojo</div>
+              <div class="date">Jan 2022</div>
+            </div>
+            <span class="projectText">
+              This a Simple Blog website created using React and React Router.
+              React Bootstrap is used for basic styling and an open source jsonplaceholder API for data .This first page gives information of the different users of the site . Functionalities like all blogs , individual blogs as per user , pagination and search is provided along with comment section for each post.
+            </span>
+            <div class="teckStack">
+              <div class="stack">React</div>
+              <div class="stack" style="background-color: rgb(215, 250, 242)">
+                React Router
+              </div>
+              <div class="stack">React Bootstrap</div>
+              <div class="stack" style="background-color: rgb(215, 250, 242)">
+                GitHub Pages
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="https://sang-harsh.github.io/travelguide/">
+          <img src="./images/travelguide.png" class="projectImage" />
+          <div class="projectInfo">
+            <div class="projectTitle">Travel Guide</div>
+            <div class="date">Feb 2022</div>
+          </div>
+          <span class="projectText">
+            A Travel Guide website created using React JS , Rapid API , Google Maps Cloud platform,etc.
+            This provides information on Restaurants , Hotels and Attractions of a perticular place.
+            Also provides a basic map view of a perticular location and renders the details accordingly.
           </span>
           <div class="teckStack">
             <div class="stack">React</div>
@@ -299,6 +299,7 @@
               Javascript
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
@@ -308,15 +309,12 @@
       <span class="candle">🕯️</span>
       <br />
       <br />
-      Made for the ❤️ of programming by Sangharsh Khandagale
-      <br />
-      <br />
-      ksangharsh910@gmail.com
-      <br />
-      <br />
+      <h4>Made for the ❤️ of programming by Sangharsh Khandagale</h4>
+      <h4>ksangharsh910@gmail.com</h4>
       <hr />
-      Copyright © 2021 Sangharsh Khandagale games
-    </div
+      <h4>Copyright © 2021 Sangharsh</h4>
+    </div>
+    <script src="./index.js"></script>
   </body>
   
 </html>
