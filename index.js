@@ -36,18 +36,34 @@ let viewElement3 = document.getElementById("project");
 
 clickElement1.addEventListener('click',(e)=>{
   viewElement1.scrollIntoView(options);
+  e.target.classList.add('selected');
+  clickElement.classList.remove('selected');
+  clickElement2.classList.remove('selected');
+  clickElement3.classList.remove('selected');
 });
 
 clickElement2.addEventListener('click',(e)=>{
   viewElement2.scrollIntoView(options);
+  e.target.classList.add('selected');
+  clickElement.classList.remove('selected');
+  clickElement1.classList.remove('selected');
+  clickElement3.classList.remove('selected');
 });
 
 
 clickElement3.addEventListener('click',(e)=>{
   viewElement3.scrollIntoView(options);
+  e.target.classList.add('selected');
+  clickElement.classList.remove('selected');
+  clickElement1.classList.remove('selected');
+  clickElement2.classList.remove('selected');
 });
 
 
 clickElement.addEventListener('click',(e)=>{
   window.scrollTo(0, 0);
+  e.target.classList.add('selected');
+  clickElement2.classList.remove('selected');
+  clickElement1.classList.remove('selected');
+  clickElement3.classList.remove('selected');
 });
