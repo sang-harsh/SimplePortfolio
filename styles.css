@@ -319,18 +319,24 @@ button {
   }
   .mainHeading {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
   }
   .mainContent {
     padding-top: 22px 0px 22px 0px;
     max-width: 350px;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
+  }
+  .Sections {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: "Sen", sans-serif;
   }
   .section-heading {
     font-family: "sen";
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 550;
   }
   .skillsContainer {
     display: flex;
@@ -338,18 +344,19 @@ button {
     justify-content: space-evenly;
     max-width: 900px;
     margin: auto;
+    font-size: 15px;
   }
 
   .skillsContent {
     font-family: "Raleway", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
     max-width: 600px;
     margin: auto;
+    font-size: 12px;
   }
   .progressbar-title {
     width: 300px;
     font-family: "Baloo Chettan 2", cursive;
+    text-align: left;
   }
   .footer {
     display: flex;
