@@ -4,7 +4,6 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
 }
 
 * {
@@ -17,7 +16,6 @@ body {
   display: flex;
   background-color: #fbeec163;
   position: fixed;
-  top: 0;
   padding: 10px;
   width: 100%;
   align-items: center;
@@ -38,54 +36,6 @@ body {
   border-bottom: 3px solid black;
 }
 
-@media screen and (max-width: 768px) {
-  #navBar {
-    display: flex;
-    background-color: #fbeec163;
-    position: fixed;
-    padding: 10px;
-    width: 100%;
-    align-items: center;
-    font-size: 10px;
-  }
-  .navBarLogo {
-    flex: 1;
-    font-size: 20px;
-  }
-
-  #navBar div {
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .banner {
-    min-height: 450px;
-    background-color: #fbeec1;
-    padding: 120px 50px 40px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mainHeading {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    color: rgb(87, 71, 71);
-  }
-  .mainContent {
-    padding-top: 22px;
-    max-width: 350px;
-    font-size: 15px;
-    padding-bottom: 22px;
-    text-align: center;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    font-family: "Sen";
-  }
-  
-}
 /* Banner */
 
 .banner {
@@ -101,7 +51,6 @@ body {
 }
 
 .mainContent {
-  padding-top: 22px;
   max-width: 600px;
   padding-bottom: 22px;
 }
@@ -165,20 +114,25 @@ button {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-family: "Sen", sans-serif;
 }
-
+.section-heading {
+  font-family: "sen";
+  font-size: 35px;
+}
 /* Skills Section */
 
 .skillsContainer {
   display: flex;
   flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
   justify-content: space-evenly;
   max-width: 900px;
   margin: auto;
 }
 
 .skillsContent {
-  font-family: "Raleway", sans-serif;
+  font-family: "Sen", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 600px;
@@ -196,6 +150,11 @@ button {
   background-color: gold;
   height: 6px;
   border-radius: 3px;
+}
+
+.progressbar-title {
+  width: 300px;
+  text-align: left;
 }
 
 .react {
@@ -254,7 +213,6 @@ button {
   font-size: 24px;
   font-weight: bold;
 }
-
 
 /* Projects Section */
 .projectFlex {
@@ -322,9 +280,84 @@ button {
   padding: 30px 0px 30px 0px;
   color: rgb(73, 70, 70);
   font-family: "Baloo Chettan 2", cursive;
+  font-weight: 600;
 }
 .candle {
   font-size: 40px;
 }
 
 /* Responsive */
+
+@media screen and (max-width: 768px) {
+  #navBar {
+    display: flex;
+    background-color: #fbeec163;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+  }
+  .navBarLogo {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #navBar div {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner {
+    min-height: 450px;
+    background-color: #fbeec1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .mainHeading {
+    text-align: center;
+    font-size: 25px;
+  }
+  .mainContent {
+    padding-top: 22px 0px 22px 0px;
+    max-width: 350px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .section-heading {
+    font-family: "sen";
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .skillsContent {
+    font-family: "Raleway", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .progressbar-title {
+    width: 300px;
+    font-family: "Baloo Chettan 2", cursive;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Baloo Chettan 2", cursive;
+    font-weight: 600;
+  }
+  .candle {
+    font-size: 25px;
+  }
+}
