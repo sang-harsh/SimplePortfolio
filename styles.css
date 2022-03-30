@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
 }
 
 * {
@@ -37,6 +38,54 @@ body {
   border-bottom: 3px solid black;
 }
 
+@media screen and (max-width: 768px) {
+  #navBar {
+    display: flex;
+    background-color: #fbeec163;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+  }
+  .navBarLogo {
+    flex: 1;
+    font-size: 20px;
+  }
+
+  #navBar div {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner {
+    min-height: 450px;
+    background-color: #fbeec1;
+    padding: 120px 50px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainHeading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(87, 71, 71);
+  }
+  .mainContent {
+    padding-top: 22px;
+    max-width: 350px;
+    font-size: 15px;
+    padding-bottom: 22px;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sen";
+  }
+  
+}
 /* Banner */
 
 .banner {
@@ -54,32 +103,7 @@ body {
 .mainContent {
   padding-top: 22px;
   max-width: 600px;
-  font-size: 19px;
   padding-bottom: 22px;
-}
-@media screen and (max-width: 768px) {
-  .banner {
-
-    min-height: 450px;
-    background-color: #fbeec1;
-    padding: 120px 50px 40px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mainContent {
-    padding-top: 22px;
-    max-width: 350px;
-    font-size: 15px;
-    padding-bottom: 22px;
-    text-align: center;
-  }
-  .mainHeading {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    color: rgb(87, 71, 71);
-  }
 }
 
 .hand {
@@ -111,7 +135,6 @@ button {
   width: 171px;
   padding: 5px 5px;
   font-weight: 700;
-  font-size: 15px;
   color: #659dbd;
   border: 2px solid #659dbd;
   text-transform: uppercase;
@@ -146,13 +169,6 @@ button {
 
 /* Skills Section */
 
-.skillsContent {
-  font-family: "Raleway", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 600px;
-  margin: auto;
-}
 .skillsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +176,15 @@ button {
   max-width: 900px;
   margin: auto;
 }
+
+.skillsContent {
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
 .progress {
   background-color: grey;
   width: 300px;
@@ -229,16 +254,7 @@ button {
   font-size: 24px;
   font-weight: bold;
 }
-/* Footer Section */
-.footer {
-  text-align: center;
-  padding: 30px 0px 30px 0px;
-  margin: 0px 200px 0px 200px;
-  color: rgb(73, 70, 70);
-}
-.candle {
-  font-size: 40px;
-}
+
 
 /* Projects Section */
 .projectFlex {
@@ -297,20 +313,18 @@ button {
   color: rgb(82, 82, 82);
   font-size: 12px;
 }
+/* Footer Section */
 .footer {
   display: flex;
+  text-align: center;
   flex-direction: column;
-  align-items: stretch;
   flex-wrap: wrap;
-  margin: auto;
-  font-family: "Sen";
-  font-weight: 500;
+  padding: 30px 0px 30px 0px;
+  color: rgb(73, 70, 70);
+  font-family: "Baloo Chettan 2", cursive;
+}
+.candle {
+  font-size: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    font-family: "Sen";
-  }
-}
+/* Responsive */
