@@ -319,12 +319,12 @@ button {
   }
   .mainHeading {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
   }
   .mainContent {
     padding-top: 22px 0px 22px 0px;
     max-width: 350px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
   .Sections {
@@ -336,7 +336,7 @@ button {
   .section-heading {
     font-family: "sen";
     font-size: 25px;
-    font-weight: 550;
+    font-weight: 500;
   }
   .skillsContainer {
     display: flex;
