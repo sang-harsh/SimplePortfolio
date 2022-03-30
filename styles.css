@@ -3,7 +3,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 * {
@@ -40,14 +40,9 @@ body {
 /* Banner */
 
 .banner {
-  width: 100%;
-  height: 450px;
+  min-height: 450px;
   background-color: #fbeec1;
-  padding-top: 120px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 40px;
-  font-family: "Raleway", sans-serif;
+  padding: 120px 80px 40px 80px;
 }
 
 .mainHeading {
@@ -58,10 +53,35 @@ body {
 
 .mainContent {
   padding-top: 22px;
-  max-width: 500px;
+  max-width: 600px;
   font-size: 19px;
   padding-bottom: 22px;
 }
+@media screen and (max-width: 768px) {
+  .banner {
+
+    min-height: 450px;
+    background-color: #fbeec1;
+    padding: 120px 50px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContent {
+    padding-top: 22px;
+    max-width: 350px;
+    font-size: 15px;
+    padding-bottom: 22px;
+    text-align: center;
+  }
+  .mainHeading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(87, 71, 71);
+  }
+}
+
 .hand {
   display: inline-block;
   animation: wiggle 0.4s infinite;
@@ -276,4 +296,21 @@ button {
   font-family: "Baloo Chettan 2", cursive;
   color: rgb(82, 82, 82);
   font-size: 12px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: auto;
+  font-family: "Sen";
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sen";
+  }
 }

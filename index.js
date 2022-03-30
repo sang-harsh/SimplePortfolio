@@ -10,60 +10,51 @@ function getData(){
     }).catch(error =>console.log(error));
 }
 
-const options ={
-  behaviour: 'smooth',
-  block: 'start',
-  inline: 'start'
-}
+let clickHome = document.getElementById("home");
+let clickSkills = document.getElementById("skills");
+let clickLiveActivity = document.getElementById("live-activity");
+let clickProjects = document.getElementById("projects");
 
 
-let navbarElement = document.getElementById("navBar");
-let clickElement = document.getElementById("home");
-
-let clickElement1 = document.getElementById("skills");
-let viewElement1 = document.getElementById("skill");
-let clickElement2 = document.getElementById("live-activity");
-let viewElement2 = document.getElementById("live");
-let clickElement3 = document.getElementById("projects");
-let viewElement3 = document.getElementById("project");
-
-// navbarElement.innerHTML = `<div class="navBarLogo">🕯️</div>
-// <div id="home">Home</div>
-// <div id="skills">Skills</div>
-// <div id="live-activity"class="selected">Live Activity</div>
-// <div id="projects">Projects</div>`;  
-
-
-clickElement1.addEventListener('click',(e)=>{
-  viewElement1.scrollIntoView(options);
-  e.target.classList.add('selected');
-  clickElement.classList.remove('selected');
-  clickElement2.classList.remove('selected');
-  clickElement3.classList.remove('selected');
+window.addEventListener('scroll',()=>{
+  const scrolled = window.scrollY;
+  if (380<=scrolled && scrolled<880){
+    clickSkills.classList.add('selected');
+    clickHome.classList.remove('selected');
+    clickLiveActivity.classList.remove('selected');
+    clickProjects.classList.remove('selected');
+  }else if (880<=scrolled && scrolled<1280){
+    clickLiveActivity.classList.add('selected');
+    clickSkills.classList.remove('selected');
+    clickHome.classList.remove('selected');
+    clickProjects.classList.remove('selected');
+  }else if (scrolled>=1280){
+    clickProjects.classList.add('selected');
+    clickSkills.classList.remove('selected');
+    clickHome.classList.remove('selected');
+    clickLiveActivity.classList.remove('selected');
+  }else{
+    clickHome.classList.add('selected');
+    clickSkills.classList.remove('selected');
+    clickLiveActivity.classList.remove('selected');
+    clickProjects.classList.remove('selected');
+  }
 });
 
-clickElement2.addEventListener('click',(e)=>{
-  viewElement2.scrollIntoView(options);
-  e.target.classList.add('selected');
-  clickElement.classList.remove('selected');
-  clickElement1.classList.remove('selected');
-  clickElement3.classList.remove('selected');
+clickSkills.addEventListener('click',(e)=>{
+  window.scroll(0 , 380);
 });
 
-
-clickElement3.addEventListener('click',(e)=>{
-  viewElement3.scrollIntoView(options);
-  e.target.classList.add('selected');
-  clickElement.classList.remove('selected');
-  clickElement1.classList.remove('selected');
-  clickElement2.classList.remove('selected');
+clickLiveActivity.addEventListener('click',(e)=>{
+  window.scroll(0 , 880);
 });
 
 
-clickElement.addEventListener('click',(e)=>{
+clickProjects.addEventListener('click',(e)=>{
+  window.scroll(0 , 1280);
+});
+
+
+clickHome.addEventListener('click',(e)=>{
   window.scrollTo(0, 0);
-  e.target.classList.add('selected');
-  clickElement2.classList.remove('selected');
-  clickElement1.classList.remove('selected');
-  clickElement3.classList.remove('selected');
 });
