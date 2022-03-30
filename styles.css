@@ -41,7 +41,7 @@ body {
 .banner {
   min-height: 450px;
   background-color: #fbeec1;
-  padding: 120px 80px 40px 80px;
+  padding: 100px 80px 20px ;
 }
 
 .mainHeading {
@@ -81,7 +81,7 @@ body {
 button {
   margin: 5px;
   height: 48px;
-  width: 171px;
+  width: 165px;
   padding: 5px 5px;
   font-weight: 700;
   color: #659dbd;
@@ -336,7 +336,6 @@ button {
   .section-heading {
     font-family: "sen";
     font-size: 25px;
-    font-weight: 500;
   }
   .skillsContainer {
     display: flex;
@@ -352,6 +351,7 @@ button {
     max-width: 600px;
     margin: auto;
     font-size: 12px;
+    padding: 10px;
   }
   .progressbar-title {
     width: 300px;
